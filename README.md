@@ -1,11 +1,11 @@
-# kgbuild_jd416
+# inference_rate_limit_queue_threshold_scan
 
 **给知识图谱构建工程师·推理服务的限流与排队打分并按阈值给出通过与否。**
 
-`kgbuild_jd416` —— 为每一项打分并与阈值比较，明确标出通过、边界与不通过三档
+`inference_rate_limit_queue_threshold_scan` —— 为每一项打分并与阈值比较，明确标出通过、边界与不通过三档
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`kgbuild_jd416.py` 拷走就能用
+- 单文件，`inference_rate_limit_queue_threshold_scan.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install asgkho-kgbuild_jd416
+pip install asgkho-inference_rate_limit_queue_threshold_scan
 ```
 
 装完直接用命令名调用：
 
 ```bash
-kgbuild_jd416 --help
+inference_rate_limit_queue_threshold_scan --help
 ```
 
-也可以不用安装，直接把 `kgbuild_jd416.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `inference_rate_limit_queue_threshold_scan.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ kgbuild_jd416 --help
 ## 用法
 
 ```bash
-python kgbuild_jd416.py --file input.txt
-python kgbuild_jd416.py --text "示例内容"
-python kgbuild_jd416.py --file input.txt --json
+python inference_rate_limit_queue_threshold_scan.py --file input.txt
+python inference_rate_limit_queue_threshold_scan.py --text "示例内容"
+python inference_rate_limit_queue_threshold_scan.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python kgbuild_jd416.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_kgbuild_jd416.py
+python test_inference_rate_limit_queue_threshold_scan.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_kgbuild_jd416.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/asgkho/kgbuild_jd416>
+- GitHub 仓库：<https://github.com/asgkho/inference_rate_limit_queue_threshold_scan>
 
 ---
 
@@ -79,7 +79,7 @@ python test_kgbuild_jd416.py
 asgkho 做知识图谱构建工程师·推理服务的限流与排队相关的问题，方向对标微软的实习知识图谱构建工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://asgkho.github.io>
-- 仓库：<https://github.com/asgkho/kgbuild_jd416>
+- 仓库：<https://github.com/asgkho/inference_rate_limit_queue_threshold_scan>
 
 ## 许可
 
